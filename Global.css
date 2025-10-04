@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+  background-color: rgb(84, 68, 43);
+  overflow: auto;
+  position: fixed;
+  height: fit-content;
+  padding: 6px;
+  list-style-type: none;
+  border-bottom: 10px solid rgb(38, 42, 16); /* thickness, style, color */
+}
+
+/* Navbar links */
+.navbar li {
+  list-style: none;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Navbar links on mouse-over */
+.navbar li:hover {
+  border-radius: 5%;
+  background-color: rgb(85, 73, 54);
+}
+
+.logo {
+    padding: 6px;
+    border-radius: 50%;
+    width: 80px;
+    float: left;
+}
