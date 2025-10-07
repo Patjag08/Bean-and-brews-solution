@@ -24,7 +24,7 @@ $stmt->bind_param("s", $email);
 if ($stmt->execute()) {
     $result = $stmt->get_result();
     if ($row = $result->fetch_assoc()) {
-        $pass_check = password_verify($row['user_password'], PASSWORD_DEFAULT);
+        $pass_check = password_verify($password, $row['user_password']);
         echo $pass_check;
         if ($pass_check == $password) {
             echo "Your in.";
