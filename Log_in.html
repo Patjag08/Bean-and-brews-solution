@@ -26,5 +26,26 @@
             <button type="submit">Submit</button>
         </form>
         <p id="response"></p>
+        <script>
+            document.getElementById("userForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const response = await fetch("Log_in.php", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+            document.getElementById("response").textContent = data.message;
+
+            if (data.status === "success") {
+                // Redirect after a short delay
+                setTimeout(() => {
+                window.location.href = "Index.html";
+                }, 1000);
+            }
+            });
+        </script>
     </body>
 </html>

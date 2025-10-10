@@ -25,7 +25,7 @@ $stmt->bind_param("sss", $name, $email, $hashed_password);
 if ($stmt->execute()) {
     //echo "✅ New record created successfully!";
 } else {
-    echo "❌ Error: " . $stmt->error;
+    //echo "❌ Error: " . $stmt->error;
 }
 
 $stmt->close();
