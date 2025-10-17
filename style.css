@@ -55,7 +55,8 @@ body {
   color: var(--main-text-color);
   font-family: "Quicksand", sans-serif;
   position: relative;
-  margin-top: -700px;
+  margin-top: -1100px;
+  margin-bottom: 400px;
   z-index: 10;
   font-size: 40pt;
   border-radius: 30px;
