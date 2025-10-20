@@ -1,0 +1,261 @@
+/* ###################################################################################################
+This is for variables
+#######################################################################################################*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-regular {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand-bold {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+:root {
+ --main-bg-color: rgb(84, 68, 43);
+ --main-border-color: rgb(38, 42, 16);
+ --main-text-color: aliceblue;
+ --main-highlight-color: rgb(85, 73, 54);
+ --main-button-color: rgb(169,113,75)
+}
+
+/* ###################################################################################################
+This is for the body and text
+#######################################################################################################*/
+body {
+  margin: 0px;
+  background-color: var(--main-bg-color);
+}
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+
+
+.text_back {
+  background-color: var(--main-bg-color);
+  width: fit-content;
+  display: block;
+  color: var(--main-text-color);
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  margin-top: -1100px;
+  margin-bottom: 400px;
+  z-index: 10;
+  font-size: 40pt;
+  border-radius: 30px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text_back h1 {
+  padding: 25px;
+}
+
+.text_back_2 {
+  background-color: var(--main-bg-color);
+  width: fit-content;
+  display: block;
+  color: var(--main-text-color);
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  margin-top: -1200px;
+  margin-bottom: 500px;
+  z-index: 10;
+  font-size: 40pt;
+  border-radius: 30px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form__label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+
+.form__input {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 95%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+  margin-top: -70px;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+.Back_second {
+  text-align: center;
+  background-color: var(--main-bg-color);
+  width: 100%;
+  display: block;
+  color: var(--main-text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  z-index: 10;
+  font-size: 20pt;
+  margin-top: 450px;
+  padding: 0.005px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-top: 10px solid var(--main-border-color); /* thickness, style, color */
+}
+
+.Back_second h1 {
+  font-size: 40pt;
+}
+
+/* ###################################################################################################
+This is for the nav bar  
+#######################################################################################################*/
+
+.navbar {
+  width: 100%;
+  background-color: var(--main-bg-color);
+  overflow: auto;
+  position: fixed;
+  height: fit-content;
+  padding: 6px;
+  list-style-type: none;
+  border-bottom: 10px solid var(--main-border-color); /* thickness, style, color */
+  z-index: 20;
+}
+
+/* Navbar links */
+.navbar li {
+  list-style: none;
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Navbar links on mouse-over */
+.navbar li:hover {
+  border-radius: 5%;
+  background-color: var(--main-highlight-color);
+}
+
+.logo {
+  padding: 6px;
+  border-radius: 50%;
+  width: 80px;
+  float: left;
+}
+
+/* ###################################################################################################
+This is for menu 
+#######################################################################################################*/
+
+.menu {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-border-color) var(--main-bg-color);
+  width: 100%;
+  list-style-type: none;
+  z-index: 15;
+  font-size: 50pt;
+  height: fit-content;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+.menu_item {
+  display: inline-block;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: var(--main-border-color);
+  border-radius: 30px;
+}
+
+.menu_image {
+  height: 450px;
+  width: 400px;
+  border-radius: 30px;
+  padding-top: 10px;
+}
+
+/*<!-- HTML !-->
+<button class="button-36" role="button">Button 36</button>*/
+
+/* CSS */
+button {
+  background-color: var(--main-button-color);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 25px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 380px;
+}
+
+button:hover {
+  box-shadow: var(--main-highlight-color) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 0 2.6rem;
+  }
+}

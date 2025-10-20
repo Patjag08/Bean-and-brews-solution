@@ -18,14 +18,27 @@ $password = $_POST['password']; // raw password (we’ll hash it below)
 // OPTIONAL: hash password before storing (recommended!)
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-// Use prepared statements for safety
-$stmt = $conn->prepare("INSERT INTO user (user_name, user_email, user_password) VALUES (?, ?, ?)");
-$stmt->bind_param("sss", $name, $email, $hashed_password);
 
-if ($stmt->execute()) {
-    //echo "✅ New record created successfully!";
+//Check if the email exists
+$stmt = $conn->prepare("SELECT 1 FROM user WHERE user_email = ?");
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$result = $stmt->get_result();
+
+if ($result->num_rows > 0) {
+    echo json_encode(["status" => "error", "message" => "Email exists."]);
 } else {
-    //echo "❌ Error: " . $stmt->error;
+    // Use prepared statements for safety
+    $stmt = $conn->prepare("INSERT INTO user (user_name, user_email, user_password) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $hashed_password);
+
+    if ($stmt->execute()) {
+        //echo "✅ New record created successfully!";
+        echo json_encode(["status" => "success", "message" => "Sign up successful!"]);
+    } else {
+        //echo "❌ Error: " . $stmt->error;
+        echo json_encode(["status" => "error", "message" => "An error occured."]);
+    }
 }
 
 $stmt->close();
