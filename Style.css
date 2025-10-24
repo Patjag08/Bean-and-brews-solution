@@ -33,7 +33,12 @@ This is for the body and text
 body {
   margin: 0px;
   background-color: var(--main-bg-color);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
+
+@keyframes fadeIn {
+  to {opacity: 1;}}
 
 * {
   /* margin: 0;
@@ -150,6 +155,8 @@ body {
 This is for the nav bar  
 #######################################################################################################*/
 
+
+
 .navbar {
   width: 100%;
   background-color: var(--main-bg-color);
@@ -185,12 +192,34 @@ This is for the nav bar
   background-color: var(--main-highlight-color);
 }
 
+.navbar a:hover {
+  border-radius: 5%;
+  background-color: var(--main-highlight-color);
+}
+
+.navbar-right {
+  float: right;
+}
+
 .logo {
   padding: 6px;
   border-radius: 50%;
   width: 80px;
   float: left;
 }
+
+.cart_img {
+  padding: 6px;
+  border-radius: 50%;
+  width: 80px;
+  float: left;
+}
+
+/* ###################################################################################################
+This is for the cart
+#######################################################################################################*/
+
+
 
 /* ###################################################################################################
 This is for menu 
