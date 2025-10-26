@@ -1,0 +1,216 @@
+{
+  "cafe": [
+    {
+      "id": 1,
+      "name": "Classic Cappuccino",
+      "price": 4.50,
+      "image": "https://via.placeholder.com/300x300?text=Cappuccino",
+      "description": "Rich espresso topped with steamed milk foam for a perfectly balanced coffee experience."
+    },
+    {
+      "id": 2,
+      "name": "Iced Caramel Latte",
+      "price": 5.25,
+      "image": "https://via.placeholder.com/300x300?text=Iced+Latte",
+      "description": "Chilled espresso drink blended with caramel syrup and cold milk over ice."
+    },
+    {
+      "id": 3,
+      "name": "Espresso Shot",
+      "price": 2.75,
+      "image": "https://via.placeholder.com/300x300?text=Espresso",
+      "description": "A bold, concentrated shot of pure espresso — for true coffee lovers."
+    },
+    {
+      "id": 4,
+      "name": "Mocha Latte",
+      "price": 5.50,
+      "image": "https://via.placeholder.com/300x300?text=Mocha",
+      "description": "A delicious blend of espresso, chocolate, and steamed milk topped with whipped cream."
+    },
+    {
+      "id": 5,
+      "name": "Vanilla Cold Brew",
+      "price": 5.75,
+      "image": "https://via.placeholder.com/300x300?text=Cold+Brew",
+      "description": "Smooth cold brew coffee infused with vanilla for a refreshing flavor."
+    },
+    {
+      "id": 6,
+      "name": "Chai Latte",
+      "price": 4.95,
+      "image": "https://via.placeholder.com/300x300?text=Chai+Latte",
+      "description": "A spiced black tea blend with steamed milk, featuring cinnamon, cardamom, and cloves."
+    },
+    {
+      "id": 7,
+      "name": "Matcha Green Tea Latte",
+      "price": 5.50,
+      "image": "https://via.placeholder.com/300x300?text=Matcha+Latte",
+      "description": "Creamy steamed milk with finely ground Japanese matcha for a vibrant, earthy drink."
+    },
+    {
+      "id": 8,
+      "name": "Iced Americano",
+      "price": 4.25,
+      "image": "https://via.placeholder.com/300x300?text=Iced+Americano",
+      "description": "Refreshing espresso and cold water over ice for a smooth, strong flavor."
+    },
+    {
+      "id": 9,
+      "name": "Hot Chocolate",
+      "price": 4.75,
+      "image": "https://via.placeholder.com/300x300?text=Hot+Chocolate",
+      "description": "Rich and creamy cocoa topped with whipped cream and chocolate drizzle."
+    },
+    {
+      "id": 10,
+      "name": "Iced Matcha Lemonade",
+      "price": 5.00,
+      "image": "https://via.placeholder.com/300x300?text=Matcha+Lemonade",
+      "description": "A refreshing twist of matcha green tea blended with tangy lemonade."
+    },
+    {
+      "id": 11,
+      "name": "Hazelnut Latte",
+      "price": 5.25,
+      "image": "https://via.placeholder.com/300x300?text=Hazelnut+Latte",
+      "description": "Espresso with steamed milk and a hint of nutty hazelnut sweetness."
+    },
+    {
+      "id": 12,
+      "name": "Iced Mocha",
+      "price": 5.50,
+      "image": "https://via.placeholder.com/300x300?text=Iced+Mocha",
+      "description": "Chilled espresso with chocolate and milk, topped with whipped cream."
+    },
+    {
+      "id": 13,
+      "name": "Flat White",
+      "price": 4.75,
+      "image": "https://via.placeholder.com/300x300?text=Flat+White",
+      "description": "Smooth microfoam milk poured over rich espresso for a silky finish."
+    },
+    {
+      "id": 14,
+      "name": "Iced Vanilla Chai",
+      "price": 5.00,
+      "image": "https://via.placeholder.com/300x300?text=Iced+Chai",
+      "description": "Cold spiced chai tea blended with vanilla and served over ice."
+    },
+    {
+      "id": 15,
+      "name": "Turmeric Latte",
+      "price": 5.25,
+      "image": "https://via.placeholder.com/300x300?text=Turmeric+Latte",
+      "description": "Golden milk latte with turmeric, ginger, and honey for a cozy, spiced drink."
+    }
+  ],
+  "bakery": [
+    {
+      "id": 16,
+      "name": "Croissant",
+      "price": 3.25,
+      "image": "https://via.placeholder.com/300x300?text=Croissant",
+      "description": "Flaky, buttery French pastry baked to golden perfection."
+    },
+    {
+      "id": 17,
+      "name": "Chocolate Muffin",
+      "price": 3.75,
+      "image": "https://via.placeholder.com/300x300?text=Chocolate+Muffin",
+      "description": "Moist chocolate muffin loaded with rich cocoa and chocolate chips."
+    },
+    {
+      "id": 18,
+      "name": "Blueberry Scone",
+      "price": 3.50,
+      "image": "https://via.placeholder.com/300x300?text=Blueberry+Scone",
+      "description": "Tender, buttery scone packed with juicy blueberries and a hint of lemon glaze."
+    },
+    {
+      "id": 19,
+      "name": "Cinnamon Roll",
+      "price": 4.00,
+      "image": "https://via.placeholder.com/300x300?text=Cinnamon+Roll",
+      "description": "Soft dough spiraled with cinnamon sugar and topped with creamy icing."
+    },
+    {
+      "id": 20,
+      "name": "Banana Bread Slice",
+      "price": 3.25,
+      "image": "https://via.placeholder.com/300x300?text=Banana+Bread",
+      "description": "Homemade-style banana bread baked fresh daily — moist and naturally sweet."
+    },
+    {
+      "id": 21,
+      "name": "Almond Croissant",
+      "price": 3.95,
+      "image": "https://via.placeholder.com/300x300?text=Almond+Croissant",
+      "description": "A flaky croissant filled with almond cream and topped with sliced almonds."
+    },
+    {
+      "id": 22,
+      "name": "Cheese Danish",
+      "price": 3.75,
+      "image": "https://via.placeholder.com/300x300?text=Cheese+Danish",
+      "description": "Creamy cheese filling wrapped in buttery pastry and baked until golden."
+    },
+    {
+      "id": 23,
+      "name": "Chocolate Chip Cookie",
+      "price": 2.75,
+      "image": "https://via.placeholder.com/300x300?text=Cookie",
+      "description": "Crispy on the outside, chewy on the inside — a timeless favorite."
+    },
+    {
+      "id": 24,
+      "name": "Raspberry Tart",
+      "price": 4.50,
+      "image": "https://via.placeholder.com/300x300?text=Raspberry+Tart",
+      "description": "Sweet pastry crust filled with raspberry jam and topped with fresh berries."
+    },
+    {
+      "id": 25,
+      "name": "Lemon Drizzle Cake",
+      "price": 4.25,
+      "image": "https://via.placeholder.com/300x300?text=Lemon+Cake",
+      "description": "Light sponge cake soaked in tangy lemon syrup and topped with icing."
+    },
+    {
+      "id": 26,
+      "name": "Chocolate Brownie",
+      "price": 3.50,
+      "image": "https://via.placeholder.com/300x300?text=Brownie",
+      "description": "Fudgy chocolate brownie baked with dark cocoa and chocolate chunks."
+    },
+    {
+      "id": 27,
+      "name": "Strawberry Cheesecake Slice",
+      "price": 4.75,
+      "image": "https://via.placeholder.com/300x300?text=Cheesecake",
+      "description": "Creamy cheesecake with strawberry topping and buttery biscuit base."
+    },
+    {
+      "id": 28,
+      "name": "Apple Pie Slice",
+      "price": 4.25,
+      "image": "https://via.placeholder.com/300x300?text=Apple+Pie",
+      "description": "Classic apple pie with flaky crust and cinnamon-spiced filling."
+    },
+    {
+      "id": 29,
+      "name": "Vegan Blueberry Muffin",
+      "price": 3.85,
+      "image": "https://via.placeholder.com/300x300?text=Vegan+Muffin",
+      "description": "Soft, plant-based muffin bursting with blueberries and oat crumble topping."
+    },
+    {
+      "id": 30,
+      "name": "Butter Croissant Sandwich",
+      "price": 5.25,
+      "image": "https://via.placeholder.com/300x300?text=Croissant+Sandwich",
+      "description": "Freshly baked croissant filled with ham, cheese, and butter for a savory option."
+    }
+  ]
+}

@@ -40,11 +40,7 @@ function checkCookieExists(cookieName) {
    return getCookie(cookieName) !== null;
 }
 // Create the cookie if it doesnt exist
-if (checkCookieExists('cart')) {
-   console.log('Cookie exists');
-} else {
-   console.log('Cookie does not exist');
-}
+
 //Cookie based utility
 //Cart system itself:
 
@@ -105,5 +101,9 @@ function updateCart() {
 }
 
 window.onload = function() {
-    updateCart()
+  if (!getCookie('cart')) {
+    //If the cookie doesnt exist make it exist
+    setCookie('cart', encodeURIComponent(JSON.stringify([])), 365);
+  }
+  updateCart()
 }

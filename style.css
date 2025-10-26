@@ -2,21 +2,10 @@
 This is for variables
 #######################################################################################################*/
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
 
-.quicksand-regular {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.quicksand-bold {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
+
 
 
 :root {
@@ -33,13 +22,16 @@ This is for the body and text
 body {
   margin: 0px;
   background-color: var(--main-bg-color);
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
   /* margin: 0;
   padding: 0; */
   box-sizing: border-box;
-  font-family: "Source Sans Pro", "Poppins", sans-serif;
 }
 
 .container {
@@ -154,16 +146,27 @@ This is for menu
 }
 .menu_item {
   display: inline-block;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
   background-color: var(--main-border-color);
   border-radius: 30px;
+  width: 400px;
+  height: 800px;
+}
+
+.menu_item p {
+  font-size: 20pt;
+}
+
+.menu_item h3 {
+  font-size: 40pt;
+  white-space: wrap;
 }
 
 .menu_image {
-  height: 450px;
-  width: 400px;
+  height: 300px;
+  width: 250px;
   border-radius: 30px;
   padding-top: 10px;
 }
@@ -172,7 +175,7 @@ This is for menu
 <button class="button-36" role="button">Button 36</button>*/
 
 /* CSS */
-button {
+.Add_to_cart_button {
   background-color: var(--main-button-color);
   border-radius: 8px;
   border-style: none;
