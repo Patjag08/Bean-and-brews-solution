@@ -1,0 +1,69 @@
+<html>
+    <link rel="stylesheet" href="Style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <div class="navbar">
+            <img class="logo" src="Bean & Brew Logo small.png" alt="Logo">
+            <li><a href = "Index.html">Home</a></li>
+            <li><a href = "Menu.html">Menu</a></li>
+            <li><a href = "Log_in.html">Sign in</a></li>
+            <li><a href = "#">Options</a></li>
+        </div>
+    </head>
+    <body>
+        <img style="margin-top: 110px;" class="Background_home" src="background.png" width="100%">
+
+        <center><div class="text_back_2">
+            <h1 style="margin-bottom: 150px;">Sign In:</h1>
+            <form id="userForm" action="Log_in.php" method="POST">
+                <input class="form__input" type="email" id="email" name="email" placeholder="Enter email" required>
+                <label for="email" class="form__label" style="float: left;">Enter email</label><br><br>
+
+                <input class="form__input" type="password" id="passw" name="password" placeholder="Enter password" required>
+                <label for="passw" class="form__label" style="float: left;">Enter password</label><br>
+
+                <input type="checkbox" id="keeplogged" name="keeplogged" value="Option1" style="margin-top: -10px;">
+                <label for="keeplogged" style="font-size: 15pt;">Stay logged in?</label> <br><br>
+
+                <button style="margin-top: -50px;" type="submit">Submit</button> <br> <br>
+
+                <p style="font-size: 20pt;">No account?</p>
+                <button style="margin-top: -2px; width: 70%; height: 4%;" type="button" onclick="location.href='Sign_up.html'">Sign up</button>
+            </form>
+            <p id="response"></p>
+        </div></center>
+
+        
+        <script>
+            document.getElementById("userForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const response = await fetch("Log_in.php", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+            document.getElementById("response").textContent = data.message;
+
+            if (data.status === "success") {
+                // Redirect after a short delay
+                setTimeout(() => {
+                window.location.href = "Index.html";
+                }, 1000);
+            }
+            });
+        </script>
+
+        <div class="Back_second" style="margin-top: -280px;">
+            <center><p>This was created by Patjag08 on github</p></center>
+            <center><p>https://github.com/Patjag08</p></center>
+        </div>
+    </body>
+</html>

@@ -1,12 +1,13 @@
 async function loadProducts() {
-  const response = await fetch('products.json');
-  const products = await response.json();
 
-  // Now products is available here
-  console.log(products.bakery);
-  console.log(products.cafe);
+    const response = await fetch('Database/products.json');
+    const products = await response.json();
 
-  return products;
+    // Now products is available here
+    console.log(products.bakery);
+    console.log(products.cafe);
+
+    return products;
 }
 
 window.onload = function() {
@@ -31,13 +32,11 @@ window.onload = function() {
             const itemDiv = document.createElement('div');
             itemDiv.className = 'menu_item';
             itemDiv.innerHTML = `
-            <div class="menu_item">
-                <img class="menu_image" src="${item.image}">
-                <h3>${item.name}</h3>
-                <p>£${item.price}</p>
-                <button class="Add_to_cart_button" onclick="addToCart(${item.name}, ${item.price})">Add to cart</button>
-            </div>
-            `;
+            <img class="menu_image" src="${item.image}">
+            <h3>${item.name}</h3>
+            <p>£${item.price}</p>
+            <button  onclick="addToCart(${item.name}, ${item.price})">Add to cart</button>
+            `.trim();
             TestDiv.appendChild(itemDiv);
         });
     });
