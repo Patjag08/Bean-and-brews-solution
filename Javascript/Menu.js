@@ -10,8 +10,15 @@ async function loadProducts() {
     return products;
 }
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Menu.js running — DOM is ready");
+  Main();
+});
+
+
+function Main() {
     console.log('Loaded')
+    
 
     let productData;
 
@@ -30,14 +37,15 @@ window.onload = function() {
         // Display each item in the cart
         productData.cafe.forEach((item, index) => {
             const itemDiv = document.createElement('div');
-            itemDiv.className = 'menu_item';
+            
             itemDiv.innerHTML = `
-            <img class="menu_image" src="${item.image}">
-            <h3>${item.name}</h3>
+            <img class="menu_image"  src="#">
+            <h3 style="font-size: 40pt; white-space: wrap;">${item.name}</h3>
             <p>£${item.price}</p>
             <button  onclick="addToCart(${item.name}, ${item.price})">Add to cart</button>
             `.trim();
             TestDiv.appendChild(itemDiv);
+            itemDiv.classList.add('menu_item');
         });
     });
 }
