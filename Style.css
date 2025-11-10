@@ -34,6 +34,11 @@ body {
   box-sizing: border-box;
 }
 
+.Background_home {
+  width: 100%;
+  margin-bottom: -250px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -47,10 +52,9 @@ body {
   color: var(--main-text-color);
   font-family: "Quicksand", sans-serif;
   position: relative;
-  margin-top: -1100px;
-  margin-bottom: 400px;
+  margin-top: -600px;
+  margin-bottom: 100px;
   z-index: 10;
-  font-size: 40pt;
   border-radius: 30px;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -70,7 +74,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   z-index: 10;
-  font-size: 20pt;
   margin-top: 450px;
   padding: 0.005px;
   padding-left: 30px;
@@ -78,9 +81,6 @@ body {
   border-top: 10px solid var(--main-border-color); /* thickness, style, color */
 }
 
-.Back_second h1 {
-  font-size: 40pt;
-}
 
 /* ###################################################################################################
 This is for the nav bar  
@@ -133,26 +133,29 @@ This is for menu
 #######################################################################################################*/
 
 .menu {
+  display: flex;
   scrollbar-width: thin;
   scrollbar-color: var(--main-border-color) var(--main-bg-color);
-  width: 100%;
+  width: 95%;
   list-style-type: none;
   z-index: 15;
-  font-size: 50pt;
   height: fit-content;
-  white-space: nowrap;
+  overflow-y: hidden;
   overflow-x: auto;
   margin-top: 10px;
+  gap: 30px;
+  flex-direction: row;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  align-items: center;
+  align-self: center;
 }
 .menu_item {
-  display: inline-block;
-  padding: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 50px;
   background-color: var(--main-border-color);
   border-radius: 30px;
   width: 400px;
-  height: 800px;
+  height: 650px;
 }
 
 .menu_item p {
@@ -166,9 +169,11 @@ This is for menu
 
 .menu_image {
   height: 300px;
-  width: 250px;
+  width: 300px;
   border-radius: 30px;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /*<!-- HTML !-->
@@ -193,7 +198,7 @@ This is for menu
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 380px;
+  width: 300px;
 }
 
 button:hover {
@@ -205,4 +210,27 @@ button:hover {
   button {
     padding: 0 2.6rem;
   }
+}
+
+/* ###################################################################################################
+This is for the footer
+#######################################################################################################*/
+
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #ffc371;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
 }

@@ -2,6 +2,7 @@
   "cafe": [
     {
       "id": 1,
+      "favourite": true,
       "name": "Classic Cappuccino",
       "price": 4.50,
       "image": "https://via.placeholder.com/300x300?text=Cappuccino",
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "favourite": true,
       "name": "Iced Caramel Latte",
       "price": 5.25,
       "image": "https://via.placeholder.com/300x300?text=Iced+Latte",
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "favourite": false,
       "name": "Espresso Shot",
       "price": 2.75,
       "image": "https://via.placeholder.com/300x300?text=Espresso",
@@ -23,6 +26,7 @@
     },
     {
       "id": 4,
+      "favourite": false,
       "name": "Mocha Latte",
       "price": 5.50,
       "image": "https://via.placeholder.com/300x300?text=Mocha",
@@ -30,6 +34,7 @@
     },
     {
       "id": 5,
+      "favourite": true,
       "name": "Vanilla Cold Brew",
       "price": 5.75,
       "image": "https://via.placeholder.com/300x300?text=Cold+Brew",
@@ -37,6 +42,7 @@
     },
     {
       "id": 6,
+      "favourite": false,
       "name": "Chai Latte",
       "price": 4.95,
       "image": "https://via.placeholder.com/300x300?text=Chai+Latte",
@@ -44,48 +50,31 @@
     },
     {
       "id": 7,
-      "name": "Matcha Green Tea Latte",
+      "favourite": false,
+      "name": "Green Tea",
       "price": 5.50,
       "image": "https://via.placeholder.com/300x300?text=Matcha+Latte",
       "description": "Creamy steamed milk with finely ground Japanese matcha for a vibrant, earthy drink."
     },
     {
-      "id": 8,
-      "name": "Iced Americano",
-      "price": 4.25,
-      "image": "https://via.placeholder.com/300x300?text=Iced+Americano",
-      "description": "Refreshing espresso and cold water over ice for a smooth, strong flavor."
-    },
-    {
       "id": 9,
+      "favourite": false,
       "name": "Hot Chocolate",
       "price": 4.75,
       "image": "https://via.placeholder.com/300x300?text=Hot+Chocolate",
       "description": "Rich and creamy cocoa topped with whipped cream and chocolate drizzle."
     },
     {
-      "id": 10,
-      "name": "Iced Matcha Lemonade",
-      "price": 5.00,
-      "image": "https://via.placeholder.com/300x300?text=Matcha+Lemonade",
-      "description": "A refreshing twist of matcha green tea blended with tangy lemonade."
-    },
-    {
       "id": 11,
+      "favourite": true,
       "name": "Hazelnut Latte",
       "price": 5.25,
       "image": "https://via.placeholder.com/300x300?text=Hazelnut+Latte",
       "description": "Espresso with steamed milk and a hint of nutty hazelnut sweetness."
     },
     {
-      "id": 12,
-      "name": "Iced Mocha",
-      "price": 5.50,
-      "image": "https://via.placeholder.com/300x300?text=Iced+Mocha",
-      "description": "Chilled espresso with chocolate and milk, topped with whipped cream."
-    },
-    {
       "id": 13,
+      "favourite": false,
       "name": "Flat White",
       "price": 4.75,
       "image": "https://via.placeholder.com/300x300?text=Flat+White",
@@ -93,6 +82,7 @@
     },
     {
       "id": 14,
+      "favourite": false,
       "name": "Iced Vanilla Chai",
       "price": 5.00,
       "image": "https://via.placeholder.com/300x300?text=Iced+Chai",
@@ -100,6 +90,7 @@
     },
     {
       "id": 15,
+      "favourite": false,
       "name": "Turmeric Latte",
       "price": 5.25,
       "image": "https://via.placeholder.com/300x300?text=Turmeric+Latte",
@@ -109,6 +100,7 @@
   "bakery": [
     {
       "id": 16,
+      "favourite": true,
       "name": "Croissant",
       "price": 3.25,
       "image": "https://via.placeholder.com/300x300?text=Croissant",
@@ -116,6 +108,7 @@
     },
     {
       "id": 17,
+      "favourite": false,
       "name": "Chocolate Muffin",
       "price": 3.75,
       "image": "https://via.placeholder.com/300x300?text=Chocolate+Muffin",
@@ -123,6 +116,7 @@
     },
     {
       "id": 18,
+      "favourite": false,
       "name": "Blueberry Scone",
       "price": 3.50,
       "image": "https://via.placeholder.com/300x300?text=Blueberry+Scone",
@@ -130,6 +124,7 @@
     },
     {
       "id": 19,
+      "favourite": true,
       "name": "Cinnamon Roll",
       "price": 4.00,
       "image": "https://via.placeholder.com/300x300?text=Cinnamon+Roll",
@@ -137,6 +132,7 @@
     },
     {
       "id": 20,
+      "favourite": false,
       "name": "Banana Bread Slice",
       "price": 3.25,
       "image": "https://via.placeholder.com/300x300?text=Banana+Bread",
@@ -144,6 +140,7 @@
     },
     {
       "id": 21,
+      "favourite": false,
       "name": "Almond Croissant",
       "price": 3.95,
       "image": "https://via.placeholder.com/300x300?text=Almond+Croissant",
@@ -151,6 +148,7 @@
     },
     {
       "id": 22,
+      "favourite": true,
       "name": "Cheese Danish",
       "price": 3.75,
       "image": "https://via.placeholder.com/300x300?text=Cheese+Danish",
@@ -158,6 +156,7 @@
     },
     {
       "id": 23,
+      "favourite": false,
       "name": "Chocolate Chip Cookie",
       "price": 2.75,
       "image": "https://via.placeholder.com/300x300?text=Cookie",
@@ -165,6 +164,7 @@
     },
     {
       "id": 24,
+      "favourite": false,
       "name": "Raspberry Tart",
       "price": 4.50,
       "image": "https://via.placeholder.com/300x300?text=Raspberry+Tart",
@@ -172,6 +172,7 @@
     },
     {
       "id": 25,
+      "favourite": false,
       "name": "Lemon Drizzle Cake",
       "price": 4.25,
       "image": "https://via.placeholder.com/300x300?text=Lemon+Cake",
@@ -179,6 +180,7 @@
     },
     {
       "id": 26,
+      "favourite": false,
       "name": "Chocolate Brownie",
       "price": 3.50,
       "image": "https://via.placeholder.com/300x300?text=Brownie",
@@ -186,6 +188,7 @@
     },
     {
       "id": 27,
+      "favourite": false,
       "name": "Strawberry Cheesecake Slice",
       "price": 4.75,
       "image": "https://via.placeholder.com/300x300?text=Cheesecake",
@@ -193,6 +196,7 @@
     },
     {
       "id": 28,
+      "favourite": false,
       "name": "Apple Pie Slice",
       "price": 4.25,
       "image": "https://via.placeholder.com/300x300?text=Apple+Pie",
@@ -200,6 +204,7 @@
     },
     {
       "id": 29,
+      "favourite": false,
       "name": "Vegan Blueberry Muffin",
       "price": 3.85,
       "image": "https://via.placeholder.com/300x300?text=Vegan+Muffin",
@@ -207,6 +212,7 @@
     },
     {
       "id": 30,
+      "favourite": true,
       "name": "Butter Croissant Sandwich",
       "price": 5.25,
       "image": "https://via.placeholder.com/300x300?text=Croissant+Sandwich",

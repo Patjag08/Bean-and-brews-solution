@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function Main() {
-    console.log('Loaded')
+    console.log('Loaded');
     
 
     let productData;
@@ -25,27 +25,40 @@ function Main() {
     loadProducts().then(data => {
         productData = data; // assign the loaded data to a variable
         console.log("Products loaded:", productData);
-        const CafeDiv = document.getElementById('cafe');
-        const BakeryDiv = document.getElementById('Bakery');
-
-
-        const TestDiv = document.getElementById('test');
-        TestDiv.innerHTML = ''; // Clear cart display
-
+        const DrinksDiv = document.getElementById('drinks');
+        const TreatsDiv = document.getElementById('treats');
         let total = 0;
 
-        // Display each item in the cart
+        // This is for the index specificly
         productData.cafe.forEach((item, index) => {
-            const itemDiv = document.createElement('div');
+            if (item.favourite == true)
+            {
+                const itemDiv = document.createElement('div');
             
-            itemDiv.innerHTML = `
-            <img class="menu_image"  src="#">
-            <h3 style="font-size: 40pt; white-space: wrap;">${item.name}</h3>
-            <p>£${item.price}</p>
-            <button  onclick="addToCart(${item.name}, ${item.price})">Add to cart</button>
-            `.trim();
-            TestDiv.appendChild(itemDiv);
-            itemDiv.classList.add('menu_item');
+                itemDiv.innerHTML = `
+                <img class="menu_image"  src="https://static.vecteezy.com/system/resources/previews/016/916/479/non_2x/placeholder-icon-design-free-vector.jpg">
+                <p style="font-size: 25pt; white-space: no-wrap;">${item.name}<p>
+                <p>£${item.price.toFixed(2)}</p>
+                <button class="Add_to_cart_button" onclick="addToCart(${item.name}, ${item.price})">Add to cart</button>
+                `.trim();
+                DrinksDiv.appendChild(itemDiv);
+                itemDiv.classList.add('menu_item');
+            }
+        });
+        productData.bakery.forEach((item, index) => {
+            if (item.favourite == true)
+            {
+                const itemDiv = document.createElement('div');
+            
+                itemDiv.innerHTML = `
+                <img class="menu_image"  src="https://static.vecteezy.com/system/resources/previews/016/916/479/non_2x/placeholder-icon-design-free-vector.jpg">
+                <p style="font-size: 25pt; white-space: no-wrap;">${item.name}<p>
+                <p>£${item.price.toFixed(2)}</p>
+                <button class="Add_to_cart_button" onclick="addToCart(${item.name}, ${item.price})">Add to cart</button>
+                `.trim();
+                TreatsDiv.appendChild(itemDiv);
+                itemDiv.classList.add('menu_item');
+            }
         });
     });
 }
